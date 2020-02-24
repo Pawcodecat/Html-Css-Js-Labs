@@ -1,0 +1,62 @@
+.carousel-inner img {
+	width: auto;
+	height: 100%;
+}
+
+body
+{
+	background-color: #2F3336;
+	color: #efefef;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+}
+
+h1
+{
+	font-size: 36px;
+	font-weight: 400;
+	color: #3399CC;
+	margin: 20px;
+}
+
+.section
+{
+	text-align: center;
+}
+
+.section img
+{
+	width: 100%;
+	height: auto;
+}
+
+.section p
+{
+	margin-bottom: 30px;
+}
+
+.section figcaption
+{
+	margin-top: 8px;
+}
+
+/*
+.navbar-nav li:hover>.dropdown-menu
+{
+	display: block;
+}
+*/
+
+.navbar
+{
+	min-height: 57px;
+}
+
+.bg-section
+{
+	background-color: #3399CC !important;
+}
+
+
+
+

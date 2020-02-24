@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Zakątki świata</title>
+        <meta name="" content=""/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <link rel="Stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.scrollTo.min.js"></script>
+        <script>
+        jQuery(function($)
+		{	//zresetuj scrolla
+			$.scrollTo(0); 
+			
+			$('#link1').click(function(){ $.scrollTo($('#item4'), 400); });
+			$('#link2').click(function(){ $.scrollTo($('#item5'), 400); });
+			$('#link3').click(function(){ $.scrollTo($('#item6'), 400); });
+			$('#link4').click(function(){ $.scrollTo($('#item7'), 600); });
+			$('#link5').click(function(){ $.scrollTo($('#item8'), 600); });
+            $('#link6').click(function(){ $.scrollTo($('#item9'), 600); });
+            
+            $('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+		
+		}
+		);
+		//pokaż podczas przewijania
+		
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();
+		}
+		);
+</script>
+        
+    </head>
+    <body>
+      <div class="container">
+          <a href="#" class="scrollup"></a>
+          <header><img  src="img/sky.jpg" width=100% ></header>
+          <nav>
+              <ul class="menu">
+                  <li><a id="link1" href="#">Bukowa aleja</a></li>
+                  <li><a id="link2" href="#">Dunluce Castle</a></li>
+                  <li><a id="link3" href="#">Mont Blanc</a></li>
+                  <li><a id="link4" href="#">Santorini</a></li>
+                  <li><a id="link5" href="#">Belgrad</a></li>
+                  <li><a id="link6" href="#">Malta</a></li>
+              </ul>
+          </nav>
+    
+          <section class="item1" >
+              <header id = "todayheader">Islandia</header>
+              <br></br>
+          
+              <img id="todayimg" src="img/iceland.jpg" style="float: left; margin: 10px;">
+         
+         
+                  <p id="todaydescription">Islandia to zaskakujący "kraj lodu", którego mieszkańcy cieszą się imponującą średnią długością życia (80,2 lata - mężczyźni, 83,3 lata - kobiety). W tym niezykłym państwie od czerwca do sierpnia niemal przez całą dobę jest jasno. Ta najbardziej na zachód wysunięta część Europy zadziwia również ogromną liczbą owiec (cztery razy większą niż liczba mieszkańców), licznymi gejzerami oraz lokalnym alkoholem - wódką Brennivin (dosłownie płonące wino).
+                  </p>
+          </section>
+         
+         <section class="item3">
+                <header id="ciekawostkaheader">Najzimniejszy zamieszkany rejon świata</header>
+                <p class="description">Na pierwszym miejscu naszej listy znajduje się Ojmiakon – wieś położona w rosyjskiej Jakucji na Syberii. Według danych na 2001 rok wieś zamieszkiwało 521 osób. Mimo niesprzyjających warunków atmosferycznych mieszkańcy żyją jak gdyby nigdy nic. Dorośli chodzą do pracy, uczniowie do szkół i co ciekawe lekcje odwoływane są dopiero przy – 52˚C! Warto zauważyć, że średnia temperatura powietrza w styczniu wynosi około -50˚C, z kolei najniższą temperaturę odnotowano 26 stycznia 1926 roku, wówczas termometry wskazały -71,2˚C</p>
+           </section>
+           <section>
+               
+    <main>
+            </section>
+    
+          <section class="item4" id="item4">
+            
+            <img  src="img/darkhedges.jpg"  > 
+            <p class="imgcaption">Bukowa aleja</p>
+            <p class="btn"><button class="button"id="module-button1" onclick="check1(event)"><span>Czytaj więcej...  </span></button></p>
+            
+            <p class="description" id="module-content1">Zdumiewająco piękna bukowa aleja The Dark Hedges stanowi fragment Bregagh Road w Irlandii Północnej. Położona niedaleko miejscowości Armoy droga jest niewątpliwie jedną z najpiękniejszych w całej Europie. Zasadzone w XVIII wieku przez rodzinę Stuartów buki miały zaskakiwać gości, którzy wjeżdżali do ich rezydencji. Po ponad 300 latach drzewa urosły do imponujących rozmiarów, a ich splecione gałęzie utworzyły jedyny w swoim rodzaju mroczny tunel, o klimacie znanym z filmów Tima Burtona. 
+
+                Legendy mówią o nawiedzającym drogę duchu Szarej Damy. Niektórzy twierdzą, że jest to duch pokojówki z pobliskiego domu, która zaginęła wieki temu w niewyjaśnionych okolicznościach. Jeszcze inny mówią o zagubionym duchu z ukrytego w pobliżu drogi cmentarza.
+            </p>
+        </section>
+
+          <section class="item5" id="item5">
+            <img  src="img/irleand.jpg" > 
+            <p class="imgcaption" >Dunluce Castle</p>
+            <p class="btn"><button class="button" id="module-button2" onclick="check2(event)"><span>Czytaj więcej...  </span></button></p>
+           
+            <p class="description" id="module-content2">Dunluce Castle to okazałe ruiny średniowiecznego zamku w Irlandii Północnej (hrabstwo Antrim), położone w środkowej części Wybrzeża Antrim pomiędzy miejscowościami Portballintrae i Portrush. Warowania usytuowana jest na wcinającym się w morze niezwykle malowniczym skalnym klifie. Strategiczne walory tego miejsca doceniane były już przez okoliczna ludność od niepamiętnych czasów. Pierwsza większa warownia wzniesiona została tu już w XIII wieku przez członków szkockiej rodziny McQuillan. Do jej budowy użyto m.in. fragmenty skał pochodzące z pobliskiej Grobli Olbrzyma. Rodzina McQuillan władała zamkiem do XVI wieku, kiedy po wielu krwawych walkach z sąsiednimi klanami zdecydowała się opuścić to miejsce i udać się do nowo odkrytej Ameryki (stali się oni jednymi z pierwszych emigrantów w Teksasie). Wkrótce potem porzucony zamek przeszedł na własność znamienitego klanu MacDonnellów. To właśnie za ich panowania przeprowadzona została gruntowna przebudowa warowni, dzięki czemu stała się ona jedną z najpotężniejszych i najokazalszych twierdz w regionie. Zamek został dobrze ufortyfikowany i przygotowany na odpieranie wszelkich ataków. 
+                </p>
+        </section>
+
+          <section class="item6" id="item6">
+                <img  src="img/montblanc.jpg" >
+                <p class="imgcaption">Mont Blanc</p>
+                <p class="btn"><button class="button" id="module-button3" onclick="check3(event)"><span>Czytaj więcej...  </span></button></p>
+            <p class="description" id="module-content3"><span id="spanmontblanc">Mont Blanc</span> (Biała Góra - 4810,45 metrów n.p.m.) to najwyższy szczyt <span id="spanmontblanc">Alp</span> i <span id="spanmontblanc">Europy Zachodniej</span>, potocznie nazywany <span id="spanmontblanc">Dachem Europy</span>. Góra stanowi część większego masywu, który podzielony jest pomiędzy Włochów i Francuzów, przy czym to właśnie tym drugim przypadł znajdujący się w regionie Haute-Savoie i w granicach administracyjnych miasta <span id="spanmontblanc">Saint-Gervais-les-Bains</span> największy wierzchołek. Przez stulecia Mont Blanc pozostawał dla ludzi wyzwaniem nie do pokonania. Pierwsze udokumentowane zdobycie szczytu miało miejsce dopiero w 1786 roku. Dokonali tego miejscowy poszukiwacz skarbów <span id="spanmontblanc">Jacques Balmat</span> oraz doktor <span id="spanmontblanc">Michel Paccard</span>. Pierwszym Polakiem zaś, który zdobył Białą Górę był poeta <span id="spanmontblanc">Antoni Malczewski</span>. Mont Blanc to spektakularny masyw górski, który skrywa w sobie wiele tajemnic. Góra ta zbudowana jest głównie ze skał krystalicznych i - co ciekawe - wciąż rośnie, średnio o dwa do trzech milimetrów rocznie. W latach sześćdziesiątych ubiegłego wieku pod masywem wybudowany został przeszło 11 km <span id="spanmontblanc">tunel</span> łączący Francję z Włochami. Na szczyt Mont Blanc prowadzi obecnie wiele wytyczonych szlaków. Jedną z nich jest trasa wiodąca od kolejki zębatej (Tramway du Mont-Blanc) w <span id="spanmontblanc">Le Nid d'Aigle</span>, której trudność porównywalna jest z tatrzańską Orlą Percią.
+            </p>
+        </section>
+        <section class="item7" id="item7">
+            <img  src="img/SantoriniGrece.jpg" >
+            <p class="imgcaption">Santorini</p>
+            <p class="btn"><button class="button" id="module-button4" onclick="check4(event)"><span>Czytaj więcej...  </span></button></p>
+            <p class="description" id="module-content4">Santorini jest przepiękną wyspą, a jej historia czyni ją jeszcze bardziej magiczną. To wyspa zakochanych, na której podziwiać można najpiękniejsze wschody i zachody słońca z widokiem na niebieskie kopuły świątyń i białą zabudowę.
+            </p>
+        </section>
+        <section class="item8" id="item8">
+            <img  src="img/Belgrad.jpg" >
+            <p class="imgcaption">Belgrad</p>
+            <p class="btn"><button class="button" id="module-button5" onclick="check5(event)"><span>Czytaj więcej...  </span></button></p>
+            <p class="description" id="module-content5">Belgrad jest miastem, które absolutnie trzeba zobaczyć podczas wizyty w Serbii. Nie tylko dlatego, że jest jej stolicą. Belgrad jest największym i chyba najbardziej różnorodnym miastem całych Bałkanów, a także jednym z najstarszych miast w Europie.
+            </p>
+        </section>
+        <section class="item9" id="item9">
+            <img  src="img/malta.jpg" >
+            <p class="imgcaption">Malta</p>
+            <p class="btn"><button class="button" id="module-button6" onclick="check6(event)"><span>Czytaj więcej...  </span></button></p>
+            <p class="description" id="module-content6">Malta jest państwem i wyspą ze świątyniami starszymi niż egipskie piramidy. Niezapomniana architektura, magiczne plaże, ciepłe morze, kilka tysięcy lat historii, najlepszy klimat na świecie według jednego z rankingów i słoneczne niebo przez większość roku – czego chcieć więcej podczas udanych wakacji.
+            </p>
+        </section>
+        <div class="form" id="new">
+                <form class="form-inside">
+                <legend>Add your place</legend>
+                <input type="text" id="title" name="field1" placeholder="Place">
+                <input type="url" id="img" name="field2" placeholder="Image url">
+                <textarea name="field3" id="place" placeholder="Descrpition"></textarea>
+                
+          
+          
+                <input type="submit" id="sub" value="Add" />
+              </form>
+            <img onclick="form(event)" src="img/left.png" >
+            </div>
+        <section>
+            
+        </section>
+    </main>
+
+        <footer>
+              <p>  Wszelkie prawa zastrzeżone &copy; </p>
+                <img id="first" src="img/travel.png">
+                <img src="img/car.png">
+        </footer>
+        
+        
+        
+        
+    </div>
+          
+    </body>
+</html>
